@@ -408,46 +408,8 @@ header {
 }
 
 
-/* =========================================
-   SOMETHING MISSING SECTION
-========================================= */
 
-.missing-section {
-    max-width: 900px;
 
-    min-height: 190px;
-
-    margin: 40px auto;
-
-    background-color: #f0edff;
-
-    border: 1px dashed #854cff;
-
-    border-radius: 8px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-.missing-content h2 {
-    color: #783cff;
-
-    font-size: 25px;
-
-    margin-bottom: 5px;
-}
-
-.missing-content p {
-    color: #9657ff;
-
-    font-size: 14px;
-
-    font-weight: bold;
-}
 
 
 /* =========================================
@@ -538,4 +500,57 @@ header {
     color: #7d8791;
 
     font-size: 8px;
+}
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.cta-section {
+    max-width: 900px;
+    min-height: 190px;
+
+    margin: 40px auto;
+
+    background-color: #3615da;
+
+    border: 1px dashed #11042d;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: #fdf8fb;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.cta-content p {
+    color: #16121c;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+
+    background-color: #2460dc;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #1748b5;
 }
