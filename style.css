@@ -146,6 +146,11 @@ header {
 
 
 /* Hero text */
+.hero-content h1 em {
+    color: #6f8cff;
+    font-style: italic;
+}
+
 
 .hero-content {
     position: relative;
@@ -501,56 +506,167 @@ header {
 
     font-size: 8px;
 }
+
 /* =========================================
-   CTA SECTION
+   DEVCONF HACK ARENA
 ========================================= */
 
-.cta-section {
-    max-width: 900px;
-    min-height: 190px;
+.hack-arena {
+    max-width: 1080px;
+    min-height: 330px;
 
-    margin: 40px auto;
+    margin: 60px auto;
 
-    background-color: #3615da;
+    padding: 50px 30px;
 
-    border: 1px dashed #11042d;
-    border-radius: 8px;
+    box-sizing: border-box;
+
+    border-radius: 12px;
+
+    /* Background image + dark overlay */
+    background-image:
+        linear-gradient(
+            rgba(12, 25, 43, 0.88),
+            rgba(35, 25, 80, 0.90)
+        ),
+        url("./assets/hackathon-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     text-align: center;
+
+    color: white;
+
+    overflow: hidden;
 }
 
-.cta-content h2 {
-    color: #fdf8fb;
-    font-size: 25px;
-    margin-bottom: 8px;
+
+/* Main content */
+
+.hack-content {
+    max-width: 680px;
 }
 
-.cta-content p {
-    color: #16121c;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
 
-.cta-btn {
+/* Small label */
+
+.hack-label {
     display: inline-block;
 
-    background-color: #2460dc;
+    color: #7da2ff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Heading */
+
+.hack-content h2 {
+    margin: 0 0 15px;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    color: white;
+}
+
+
+/* Description */
+
+.hack-content > p {
+    margin: 0 auto 28px;
+
+    max-width: 620px;
+
+    color: #d5dbe5;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HACK DETAILS
+========================================= */
+
+.hack-details {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    margin-bottom: 30px;
+}
+
+
+.hack-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.hack-item strong {
+    font-size: 24px;
+
+    color: #ffffff;
+
+    margin-bottom: 4px;
+}
+
+
+.hack-item span {
+    font-size: 10px;
+
+    color: #aeb8c7;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.hack-btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    background-color: #2864e8;
+
     color: white;
 
     text-decoration: none;
 
-    padding: 10px 20px;
+    font-size: 12px;
 
-    border-radius: 5px;
+    font-weight: 600;
 
-    font-size: 10px;
-    font-weight: bold;
+    transition: 0.3s;
 }
 
-.cta-btn:hover {
-    background-color: #1748b5;
+
+.hack-btn:hover {
+    background-color: #477cf0;
+
+    transform: translateY(-2px);
 }
